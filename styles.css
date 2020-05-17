@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 300;
+}
+
+#title {
+    font-size: 35px;
+    margin-bottom: 0.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#description {
+    font-style: italic;
+    font-stretch: expanded;
+    font-size: x-large;
+    font-family: 'Lora', serif;
+}
+
+#container {
+    color: white;
+    height: 100%;
+}
+
+/* transparent backgroud and dark overlay */
+#container .transbox {
+    position: fixed;
+    background: url("https://images.pexels.com/photos/7096/people-woman-coffee-meeting.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    opacity: 0.4;
+}
+
+#container .overlay {
+    position: fixed;
+    background-color: #333;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Form styles */
+.form-style {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2.5em;
+    background: #333;
+    border-radius: 8px;
+    line-height: 1.5em;
+    opacity: 0.9;
+}
+
+.form-style fieldset {
+    border: none;
+}
+
+.form-header {
+    color: honeydew;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+    line-height: 2em;
+    font-weight: bolder;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="number"],
+input[type="email"],
+input[type="text"],
+select {
+    width: 100%;
+    height: 2.5em;
+    border: 1px solid #1abc9c;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: honeydew;
+}
+
+label,
+input {
+    display: block;
+}
+
+fieldset label,
+fieldset input {
+    display: inline-block;
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    background-color: honeydew;
+}
+
+form div,
+form fieldset {
+    margin-bottom: 10px;
+}
+
+form div,
+form fieldset {
+    margin-bottom: 1.5em;
+}
+
+/* button styles */
+button {
+    position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+
+button:hover {
+	background: #109177;
+}
+
+/* Add space between each form heading and its content */
+input,
+textarea,
+select {
+    margin-top: 0.5em;
+}
